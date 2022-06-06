@@ -1,0 +1,28 @@
+{
+  "name": "atsomeone",
+  "version": "1.0.0",
+  "description": "ping someone random",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "register": "ts-node src/util/deployCommands.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jackson Welsh <me@jacksonwel.sh>",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.14.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.33.3",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1",
+    "envsafe": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.40",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
