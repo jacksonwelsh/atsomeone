@@ -1,8 +1,10 @@
 import { Message } from "discord.js";
-import { ClientT } from "src/client";
 
-const getMember = (message: Message) => {
-  return message.guild?.members.fetch().then((members) => members.random());
+const getMember = async (message: Message) => {
+  return await message.guild?.channels
+    .fetch(message.channelId)
+    .then((c) => c?.members)
+    .then((m) => m?.random());
 };
 
 export default getMember;
